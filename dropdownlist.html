@@ -1,0 +1,37 @@
+<!-- I watched the html YouTube video of 생활코딩 and wrote the code. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<!-- select에 name을 붙여야 정보를 보낼 수가 있음
+책이름은 사람이 보기 좋은 것이지 컴퓨터가 보기 좋은 것은
+아니다. 그래서 컴퓨터가 보기 좋은 값을 보내려고 할때
+value를 사용한다 -->
+<!-- 다중선택 multiple -->
+<!-- multiple만 사용했을 때 다중선택을 하기 위해서는
+ctrl키를 누르고 해야한다. 그래서 dropdownlist보다는
+checkbox를 사용하는게 더 효율적일 수 있다.-->
+    <h1>가족 중에서 누가 더 좋나요?</h1>
+    <form action="http://select/family.php">
+    <select name="family">
+        <option value="Father">아버지</option>
+        <option value="Mother">어머니</option>
+        <option value="sister">여동생</option>
+        <option value="older_sister">누나</option>
+        <option value="older_brother">형</option>
+    </select>
+    <p>(그 다음은 누군가요?)</p>
+    <select name="family_mul" multiple>
+        <option value="Father">아버지</option>
+        <option value="Mother">어머니</option>
+        <option value="sister">여동생</option>
+        <option value="older_sister">누나</option>
+        <option value="older_brother">형</option>
+    </select>
+    <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<!-- 하나를 선택하면 선택되어 있는게 선택이 안된 거로 하기
+위해서는 input radio에다가 name속성을 추가하여 같은 이름
+으로 작성하면 된다.-->
+<form action="http://life/select.php">
+<h3>지금 과는?</h3>
+<p>문과 : <input type="radio" name="department" value="literature">
+이과 : <input type="radio" name="department" value="science">
+</p>
+<h3>졸업 후 진로는?</h3>
+<p>대학교 진학 : <input type="radio" name="entrance" value="university">
+전문대학 진학 : <input type="radio" name="entrance" value="college">
+취업 : <input type="radio" name="entrance" value="employment">
+</p>
+<input type="submit">
+</form>
+</body>
+</html>

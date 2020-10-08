@@ -1,0 +1,23 @@
+<!-- I watched the html YouTube video of 생활코딩 and wrote the code. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<!-- input 속성에 value를 쓰면 초기에 그 값이 나옴 -->
+<!-- 여러줄을 입력하고 싶을 때는 textarea를 쓰면 됨 
+col=열 cols속성을 사용하면 열이 늘어나고 
+rows를 사용하면 행부분을 늘릴 수 있다.-->
+    <form action="http://hostlocal/login.php">
+        <p>id : <input type="text" name="id" value="default value"></p>
+        <p>password : <input type="password" name="pwd" value="default value"></p>
+        <p>
+            textarea : 
+            <textarea cols="30" rows="10" name="ta">default value</textarea>
+        </p>
+        <input type="submit">
+    </form>
+</body>
+</html>
